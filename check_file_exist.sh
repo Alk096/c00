@@ -9,3 +9,7 @@ if [ -f "$nomFichier" ]; then
 else
     echo "Le fichier '$nomFichier' n'existe pas."
 fi
+
+if [ -z "$nomFichier" ]; then
+    echo "Vous n'avez pas entré de nom de fichier."
+fi
