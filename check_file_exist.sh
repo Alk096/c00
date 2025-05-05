@@ -4,12 +4,12 @@ echo -n 'Entrez le nom du fichier : '
 read nomFichier
 
 #verification de l'existance du fichier
-if [ -f "$nomFichier" ]; then
+if [ -f $nomFichier ]; then
     echo "Le fichier '$nomFichier' existe"
 else
     echo "Le fichier '$nomFichier' n'existe pas."
 fi
 
-if [ -z "$nomFichier" ]; then
+if [ -z $nomFichier ]; then
     echo "Vous n'avez pas entré de nom de fichier."
 fi
