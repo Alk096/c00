@@ -1,3 +1,3 @@
 #script pour afficher la liste de tout les fichier du repertoire
 
-ls
+find . -maxdepth 1 -type f
