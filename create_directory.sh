@@ -1,4 +1,5 @@
-#Script pour cree une directory "test_directory"
+# Script pour créer un répertoire "test_directory"
+
 if [ ! -d "test_directory" ]; then
     mkdir test_directory
     echo "Répertoire 'test_directory' créé."
