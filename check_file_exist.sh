@@ -1,6 +1,6 @@
 #script pour verifier l'existance d'un fichier donne
 
-echo 'Entrez le nom du fichier : '
+echo -n 'Entrez le nom du fichier : '
 read nomFichier
 
 #verification de l'existance du fichier
