@@ -3,10 +3,14 @@
 echo -n 'Entrez le nom du fichier : '
 read nomFichier
 
-# Cette condition verifie si l'utilisateur soumet un nom de fichier valide
+# Vérification de l'entrée utilisateur
 if [ -z "$nomFichier" ]; then
-    echo "Vous n'avez pas entré de nom de fichier."
-elif [ -f "$nomFichier" ]; then #Cette condition verifie si le fichier existe
+    echo "Erreur : Vous n'avez pas entré de nom de fichier."
+    exit 1
+fi
+
+# Vérification de l'existence du fichier
+if [ -f "$nomFichier" ]; then
     echo "Le fichier '$nomFichier' existe."
 else
     echo "Le fichier '$nomFichier' n'existe pas."
