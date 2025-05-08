@@ -6,7 +6,7 @@ read filename
 # Vérification de l'entrée utilisateur
 if [ -z "$filename" ]; then
     echo "Erreur : Vous n'avez pas entré de nom de fichier."
-    exit 1
+    exit
 fi
 
 # Vérification de l'existence du fichier
