@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script pour vérifier l'existence d'un fichier donné
 
-echo "Entrez le nom du fichier : " filename
+echo "Entrez le nom du fichier : "
 read filename
 
 # Vérification de l'existence du fichier
