@@ -4,11 +4,8 @@
 echo "Entrez le nom du fichier : " filename
 read filename
 
-# Vérification de l'entrée utilisateur et de l'existence du fichier
-if [ -z "$filename" ]; then
-    echo "Erreur : Vous n'avez pas entré de nom de fichier."
-    exit 1
-elif [ -f "$filename" ]; then
+# Vérification de l'existence du fichier
+if [ -f "$filename" ]; then
     echo "Le fichier '$filename' existe."
 else
     echo "Le fichier '$filename' n'existe pas."
