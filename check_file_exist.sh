@@ -1,7 +1,8 @@
 #!/bin/bash
 # Script pour vérifier l'existence d'un fichier donné
 
-read -n "Entrez le nom du fichier : " filename
+echo "Entrez le nom du fichier : " filename
+read filename
 
 # Vérification de l'entrée utilisateur et de l'existence du fichier
 if [ -z "$filename" ]; then
