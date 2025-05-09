@@ -1,4 +1,3 @@
-#!/bin/bash
 # Script pour vérifier l'existence d'un fichier donné
 
 echo -n "Entrez le nom du fichier : "
